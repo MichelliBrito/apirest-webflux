@@ -11,15 +11,16 @@ import static org.springframework.web.reactive.function.server.RequestPredicates
 
 
 
-@Configuration
+//@Configuration
 public class PlaylistRouter {
 	
-	@Bean
+	//@Bean
 	public RouterFunction<ServerResponse> route(PlaylistHandler handler){
 		return RouterFunctions
 				.route(GET("/playlist").and(accept(MediaType.APPLICATION_JSON)), handler::findAll)
 				.andRoute(GET("/playlist/{id}").and(accept(MediaType.APPLICATION_JSON)), handler::findById)
 				.andRoute(POST("/playlist").and(accept(MediaType.APPLICATION_JSON)), handler::save);
+			
 	}
 	
 
