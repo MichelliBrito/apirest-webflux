@@ -54,7 +54,7 @@ public class PlaylistController {
 
 	@GetMapping(value="/pipeline")
 	public String getPipeline(){
-		return "Hello World!!!";
+		return "Hello World!!! teste";
 	}
 
 }
