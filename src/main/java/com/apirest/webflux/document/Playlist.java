@@ -8,11 +8,11 @@ public class Playlist {
 	
 	
 	
-	public Playlist(String id, String nome) {
-		super();
-		this.id = id;
-		this.nome = nome;
-	}
+//	public Playlist(String id, String nome) {
+//		super();
+//		this.id = id;
+//		this.nome = nome;
+//	}
 	
 	
 	@Id
